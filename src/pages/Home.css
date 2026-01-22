@@ -1,0 +1,66 @@
+.hero {
+  height: 100vh;
+  background-image: url("../assets/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: paleturquoise;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.primary {
+  background: #6725ebe4;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+  padding: 12px 28px;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}
