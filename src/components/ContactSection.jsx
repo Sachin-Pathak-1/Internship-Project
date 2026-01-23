@@ -1,6 +1,6 @@
 export function ContactSection() {
     return(
-        <section className="py-16 px-4 bg-white">
+        <section id="contact" className="h-screen py-16 px-4 bg-white">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Contact Us</h2>
                 <div className="space-y-6 text-center">

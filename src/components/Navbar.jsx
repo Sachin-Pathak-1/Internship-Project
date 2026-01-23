@@ -21,19 +21,22 @@ export function Navbar() {
 
 
   return (
-    <nav className="flex items-center justify-between p-4 px-20 bg-blue-500 text-white">
+    <nav className="sticky top-0 flex items-center justify-between p-4 px-20 bg-blue-500 text-white">
       <div className="flex items-center w-full justify-between">
         <h2 className="logo">My Website</h2>
 
         <ul className="flex items-center gap-8 list-none relative">
           <li>
-            <Link to="/">Home</Link>
+            <a href="#">Home</a>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <a href="#about">About</a>
           </li>
           <li>
-            <Link to="/">Services</Link>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
 
           {/* Profile Dropdown — ONLY when logged in */}
@@ -45,7 +48,7 @@ export function Navbar() {
               <button className="cursor-pointer font-bold">Profile ▾</button>
 
               {showDropdown && (
-                <ul className="absolute flex flex-col top-full left-20 mt-3 w-40 bg-blue-300 text-black rounded shadow-lg text-center z-10">
+                <ul className="absolute flex flex-col top-full left-80 mt-3 w-40 bg-blue-300 text-black rounded shadow-lg text-center z-10">
                   <li><Link to="/activity">My Activity</Link></li>
                   <li><Link to="/history">History</Link></li>
                   <li><Link to="/profile">View Profile</Link></li>
