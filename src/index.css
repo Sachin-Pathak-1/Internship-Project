@@ -297,3 +297,158 @@ body {
 .dropdown-menu li:hover {
   background: #f1f5f9;
 }
+
+/* ===== ADMIN DASHBOARD ===== */
+
+.admin-container {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 230px;
+  background: #111827;
+  color: white;
+  padding: 25px 20px;
+}
+
+.admin-logo {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-menu a {
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.admin-menu a:hover {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+/* Main Content */
+.admin-content {
+  flex: 1;
+  padding: 30px;
+  background: #f3f4f6;
+}
+
+.admin-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.admin-menu a.active {
+  background: #2563eb;
+  color: white;
+}
+
+.admin-page {
+  padding: 30px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* DASHBOARD */
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.dash-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.dash-number {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info-panel {
+  margin-top: 30px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* APPOINTMENTS */
+
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* PROFILE */
+
+.simple-profile {
+  max-width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.simple-profile input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}

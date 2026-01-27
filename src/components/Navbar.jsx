@@ -50,13 +50,16 @@ export default function Navbar() {
                 <ul className="dropdown-menu">
                   <li><Link to="/activity">My Activity</Link></li>
                   <li><Link to="/history">History</Link></li>
-                  <li><Link to="/profile">View Profile</Link></li>
+                  <li><Link to="/admin/profile">View Profile</Link></li>
                 </ul>
               )}
             </li>
           )}
 
           {/* Login / Logout */}
+          <li>
+            <Link to="/admin">Dashboard</Link>
+          </li>
           <li>
             <button
               className={`btn ${isLoggedIn ? "logout-btn" : "login-btn"}`}
