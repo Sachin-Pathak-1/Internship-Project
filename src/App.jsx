@@ -9,6 +9,9 @@ import Login from "./Pages/Login.jsx";
 import MyActivity from "./Pages/MyActivity.jsx";
 import History from "./Pages/History.jsx";
 import ViewProfile from "./Pages/ViewProfile.jsx";
+import AdminDashboard from "./Pages/AdminDashboard.jsx";
+import AdminProfile from "./Pages/AdminProfile.jsx";
+import AdminAppointments from "./Pages/AdminAppointments.jsx";
 import "./App.css";
 
 export default function App() {
@@ -24,8 +27,13 @@ export default function App() {
         <Route path="/myactivity" element={<MyActivity />} />
         <Route path="/history" element={<History />} />
         <Route path="/viewprofile" element={<ViewProfile />} />
+        
+        {/* Admin Dashboard Routes */}
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/profile" element={<AdminProfile />} />
+        <Route path="/admin/appointments" element={<AdminAppointments />} />
       </Routes>
       <Footer />
-    </ >
+    </>
   );
 }

@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 import ProfileDropdown from './ProfileDropdown';
 
 export default function Navbar() {
   const [isLoggedIn,setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  const handleDashboard = () => {
+    navigate("/admin/dashboard");
+  };
+
   return (
     <nav>
       <div className="navbar-logo">
@@ -18,6 +24,7 @@ export default function Navbar() {
         <Link to="/contact">Contact</Link>
       </ul>
        <div className="nav-actions">
+        <button onClick={handleDashboard} className="dashboard-btn">Dashboard</button>
         <button onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Logout" : "Login"}</button>
         {isLoggedIn && (<ProfileDropdown />)}
       </div>

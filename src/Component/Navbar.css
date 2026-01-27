@@ -46,18 +46,42 @@ nav {
   font-weight: 500;
   font-size: 1rem;
 }
+
 .nav-actions button {
-  background-color: #f4b400;
-  color: #111;
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
   font-weight: 500;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
+
 .nav-actions button:hover {
+    background-color: #ffae00;
+  transform: none;
+}
+
+.dashboard-btn {
+  background-color: #f4b400;
+  color: #111;
+}
+
+.dashboard-btn:hover {
+  background-color: #ffae00;
+  transform: none;
+}
+
+.dashboard-btn:active {
+  transform: none;
+  background-color: #dca300;
+}
+
+.nav-actions button:not(.dashboard-btn) {
+  background-color: #f4b400;
+  color: #111;
+}
+
+.nav-actions button:not(.dashboard-btn):hover {
   background-color: #dca300;
 }
 
