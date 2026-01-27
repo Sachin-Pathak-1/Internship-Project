@@ -38,7 +38,11 @@ export function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
-
+        </ul>
+        <ul className="flex items-center gap-6 list-none relative">
+          <li>
+            <a href="/dashboard">Dashboard</a>
+          </li>
           {/* Profile Dropdown — ONLY when logged in */}
           {isLoggedIn && (
             <li
